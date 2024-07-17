@@ -1,35 +1,97 @@
-# Company Dashboard Template
+# E-Commerce Demo
 
-This repository contains a basic company dashboard template designed for management and monitoring purposes.
+## Introduction
 
-## Project Structure
+Welcome to the Parallax E-Commerce Demo, a full stack web application developed using Laravel 11 and Vue. This application allows users to manage products and orders efficiently. Users can create, read, update, and delete products and orders through a simple and intuitive interface. Additionally, the application supports real-time updates and integrates authentication and authorization for secure access.
 
-- **Components:** Contains reusable Vue components used throughout the application.
-  - **InputError.vue:** Component for displaying validation errors in form inputs.
-  - **Checkbox.vue:** Component for styled checkbox input.
-  
-- **Layouts:** Contains layout components defining the structure of different sections of the application.
-  - **GuestLayout.vue:** Layout for pages accessible to guest users.
-  - **AppLayout.vue:** Layout for authenticated user pages.
 
-- **Pages:** Contains Vue components representing different pages of the dashboard application.
+## Features
 
-## Setup and Customization
+- **CRUD Operations:** Create, read, update, and delete products and orders.
+- **Real-time Updates:** Automatic updates of request data in the table.
+- **Authentication and Authorization:** Secure access to the application.
+- **API Endpoints:** Well-defined endpoints for managing requests.
+- **Validation and Error Handling:** Robust request validation and error management.
+- **Responsive Design:** Usable on various devices with a responsive frontend.
 
-1. **Clone Repository:** Clone the repository to your local environment.
-   
-2. **Customize Components:**
-   - Modify `InputError.vue` and `Checkbox.vue` components as needed to match your design and functionality requirements.
+## Included in the Project
 
-3. **Layout Customization:**
-   - Adjust `GuestLayout.vue` and `AppLayout.vue` to define the structure and styling of guest and authenticated user pages respectively.
+- Full source code of the application.
+- MySQL database dump.
+- Screenshots.
 
-4. **Page Development:**
-   - Develop individual pages within the `pages` directory, utilizing the provided layouts and components.
+## Setup Instructions
 
-5. **Integration:**
-   - Integrate backend services and APIs as necessary to populate data in the dashboard pages.
+### Prerequisites
 
-## Usage
+Ensure you have the following installed on your machine:
 
-This template provides a starting point for developing a company dashboard application. Customize and extend it based on your specific requirements, branding, and functionality needs.
+- PHP 8.1 or higher
+- Composer
+- Node.js and npm
+- MySQL
+
+### Cloning the Repository
+
+1. Clone the repository to your local machine:
+    ```sh
+    git clone https://github.com/lankeshhalangoda/Parallax-E-Commerce-Demo.git
+    cd parallax-e-commerce-demo
+    ```
+
+### Backend Setup
+
+1. Install PHP dependencies:
+    ```sh
+    composer install
+    ```
+
+2. Create a copy of the `.env.example` file and rename it to `.env`:
+    ```sh
+    cp .env.example .env
+    ```
+
+3. Update the `.env` file with your database configuration:
+    ```sh
+    DB_DATABASE=parallax_ase
+    DB_USERNAME=root
+    DB_PASSWORD=your_password
+    ```
+
+4. Generate an application key:
+    ```sh
+    php artisan key:generate
+    ```
+
+5. Run database migrations and seeders:
+    ```sh
+    php artisan migrate --seed
+    ```
+
+### Frontend Setup
+
+1. Install Node.js dependencies:
+    ```sh
+    npm install
+    ```
+
+2. Build the frontend assets:
+    ```sh
+    npm run dev
+    ```
+
+### Running the Application
+
+1. Start the Laravel development server:
+    ```sh
+    php artisan serve
+    ```
+
+2. Open your browser and navigate to `http://localhost:8000`.
+
+
+## Additional Information
+
+- **Database Dump:** Included in the `database` directory.
+- **Screenshots Collection:** Included in the `screenshots` directory.
+
