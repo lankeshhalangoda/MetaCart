@@ -1,8 +1,8 @@
-# E-Commerce Demo
+# MetaCart
 
 ## Introduction
 
-Welcome to the Parallax E-Commerce Demo, a full stack web application developed using Laravel 11 and Vue. This application allows users to manage products and orders efficiently. Users can create, read, update, and delete products and orders through a simple and intuitive interface. Additionally, the application supports real-time updates and integrates authentication and authorization for secure access.
+Welcome to the MetaCart, a full stack web application developed using Laravel 11 and Vue. This application allows users to manage products and orders efficiently. Users can create, read, update, and delete products and orders through a simple and intuitive interface. Additionally, the application supports real-time updates and integrates authentication and authorization for secure access.
 
 
 ## Features
